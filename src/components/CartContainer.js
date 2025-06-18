@@ -80,7 +80,7 @@ function CartContainer({ cart }) {
         navigate('/checkout')
     }
     return (
-        <div>
+        <div className='my-4'>
             <div className='total-wrapper'>
                 <div className='total-container'>
                     <span className='total'>Total:</span>
