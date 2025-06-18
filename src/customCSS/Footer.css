@@ -1,0 +1,37 @@
+.footerWrapper{
+    padding: 0;
+}
+.footer{
+    background-color: #f9f9f9;
+    color: #6e2e2e;
+    margin-top: 20px;
+}
+.footer-top {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 10px;
+    padding: 20px 0;
+}
+h5{
+    font-weight: 700;
+}
+h6{
+    text-align: center;
+}
+.category {
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+}
+.category p{
+    padding: 0;
+}
+.directory {
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+}
+.directory p{
+    padding: 0;
+}

@@ -1,0 +1,42 @@
+.navbartop{
+    position: sticky;
+    top: 0;
+    z-index: 99999999;
+}
+.top-bar {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    height: 60px;
+    align-items: center;
+    background-color: #f9f9f9;
+    padding: 0;
+    margin: 0 0 20px 0;
+    width: 100%;
+}
+.top-bar li {
+    list-style: none;
+    color: #333333;
+    cursor: pointer;
+}
+
+.link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+.bold {
+    font-weight: bold;
+}
+.menu-bar {
+    height: 60px;
+    background-color: #f9f9f9;
+    width: 100%;
+}
+.toggle1 {
+    margin-right: 30px;
+    cursor: pointer;
+}

@@ -1,24 +1,65 @@
-import logo from './logo.svg';
-import './App.css';
+import Home from "./components/Home";
+import VerticalNavigation from './components/VerticalNaviagtion';
+import './App.css'
+import NavBar from "./components/NavBar";
+import Footer from "./components/Footer";
+import { useState } from 'react';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import About from "./components/About";
+import Contact from "./components/Contact";
+import CartContainer from "./components/CartContainer";
+import Checkout from "./components/Checkout";
+
 
 function App() {
+  const [isFilter, setIsFilter] = useState(true);
+  const [isCancel, setIsCancel] = useState(false);
+  const [isHome, setIsHome] = useState(true);
+  const [isAbout, setIsAbout] = useState(false);
+  const [isContact, setIsContact] = useState(false);
+  const home = () => {
+    setIsHome(true);
+    setIsAbout(false);
+    setIsContact(false)
+  }
+  const about = () => {
+    setIsHome(false);
+    setIsAbout(true);
+    setIsContact(false)
+  }
+  const contact = () => {
+    setIsHome(false);
+    setIsAbout(false);
+    setIsContact(true)
+  }
+  const filter = () => {
+    setIsFilter(false);
+    setIsCancel(true);
+  }
+  const cancel = () => {
+    setIsCancel(false);
+    setIsFilter(true);
+  }
+  const cart = () => {
+    setIsHome(false);
+    setIsAbout(false);
+    setIsContact(false)
+  }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="App">
+        <NavBar isFilter={isFilter} isCancel={isCancel} filter={filter} cancel={cancel} isAbout={isAbout} isContact={isContact} isHome={isHome} home={home} contact={contact} about={about} />
+        <VerticalNavigation isAbout={isAbout} isContact={isContact} isHome={isHome} home={home} contact={contact} about={about} isCancel={isCancel} />
+        <Routes>
+          <Route path={"/"} element={<Home cart={cart} />} />
+          <Route path={"/about"} element={<About />} />
+          <Route path={"/contact"} element={<Contact />} />
+          <Route path={"/cart"} element={<CartContainer cart={cart} />} />
+          <Route path={"/checkout"} element={<Checkout />} />
+        </Routes>
+        <Footer />
+      </div>
+    </Router>
   );
 }
 

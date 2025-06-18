@@ -1,0 +1,112 @@
+.about {
+    margin: 40px 0;
+}
+.founder-wrapper {
+    display:  flex;
+    justify-content: center;
+}
+.founder {
+    display:  flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    box-shadow: 0 4px 8px lightblue;
+    border-radius: 5px;
+    padding: 20px;
+    width: 90%;
+    height: fit-content;
+}
+.founder img{
+    width: 30%;
+    max-height: 300px;
+    object-fit: contain;
+}
+.founder div {
+    max-width: 40%;
+}
+.founder h2{
+    color: #666666;
+    font-weight: 700;
+    text-align: start;
+}
+.founder p{
+    width: 100%; 
+}
+p{
+    color: #6e2e2e;
+}
+.started {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    width: 90%;
+    height: fit-content;
+    box-shadow: 0 4px 8px lightblue;
+    border-radius: 5px;
+    padding: 3px;
+}
+.started-wrapper {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+}
+.goal {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    width: 90%;
+    height: fit-content;
+    box-shadow: 0 4px 8px lightblue;
+    border-radius: 5px;
+    padding: 3px;
+}
+.goal-wrapper {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+}
+.mission {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    width: 90%;
+    height: fit-content;
+    box-shadow: 0 4px 8px lightblue;
+    border-radius: 5px;
+    padding: 3px;
+}
+.mission-wrapper {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+}
+@media (max-width: 576px) {
+    .founder {
+        width: 100%;
+    }
+    .founder img{
+        width: 100%;
+    }
+    .founder div {
+        max-width: 100%;
+    }
+    .founder h2{
+        text-align: center;
+    }
+    p{
+       text-align: justify;
+       padding: 0 20px;
+    }
+    .started {
+        width: 100%;
+    }
+    .goal {
+        width: 100%;
+    }
+    .mission {
+        width: 100%;
+    }
+}

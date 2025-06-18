@@ -1,0 +1,136 @@
+.home {
+    font-size: 18px;
+    margin: 20px 0;
+}
+h1 {
+    font-weight: 700;
+    text-align: center;
+    color: #666666;
+}
+.heading {
+    display: flex;
+    justify-content: center;
+}
+.welcome {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    box-shadow: 0 4px 8px lightblue;
+    border-radius: 5px;
+    padding: 3px;
+    height: fit-content;
+}
+.welcome p{
+    color: #6e2e2e;
+    padding: 0 20px;
+    text-align: justify;  
+}
+.what{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    box-shadow: 0 4px 8px lightblue;
+    border-radius: 5px;
+    padding: 3px;
+    height: fit-content;
+}
+.what-wrapper {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0 20px 0;
+}
+.what-list {
+    width: fit-content;
+    color: #6e2e2e;
+}
+.available-wrapper {
+    margin: 20px 0 20px 0;
+    padding: 3px;
+    display: flex;
+    justify-content: center;
+}
+.available {
+    box-shadow: 0 4px 8px lightblue;
+    border-radius: 5px;
+    padding: 3px;
+    width: 90%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+h2{
+    font-weight: 700;
+    text-align: center;
+    color: #666666;
+}
+
+.btn {
+    background-color: #c75b12;
+    color: #fff;
+}
+  .card {
+    min-width: 200px;
+    max-width: 250px;
+  }
+  .card img {
+    height: 300px;
+  }
+  .card p{
+    padding: 0;
+    color: #6e2e2e;
+    height: 60px;
+  }
+  .card-text {
+    margin-top: 10px;
+    margin-bottom: 15px;
+    text-align: start;
+  }
+  .minus {
+    margin-right: 5px;
+  }
+  .plus {
+    margin-left: 5px;
+  }
+  .count {
+    height: inherit;
+    width: fit-content;
+    text-align: center;
+    margin: 0 5px;
+  }
+
+  .cartButton-wrapper {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 60px;
+    border-radius: 5px 5px 0 0;
+    box-shadow: 0 4px 8px lightblue;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #c75a122f;
+    background-color: #c75b12;
+    cursor: pointer;
+  }
+.cartButton {
+    color: #fff;
+    font-weight: 700;
+}
+.cartButton-wrapper:hover {
+    background-color: #917f74;
+}
+  @media (max-width: 576px) {
+    .welcome, .what, .available {
+        width: 100%;
+    }
+    .cartButton-wrapper {
+        width: 100%;
+    }
+  }
