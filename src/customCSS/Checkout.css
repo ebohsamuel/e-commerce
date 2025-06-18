@@ -85,6 +85,52 @@
     outline: none !important;
     box-shadow: none !important;
 }
+.credit-card {
+    margin-right: 10px;
+    font-size: 20px;
+}
+.notice-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    width: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: top 0.3s ease-out, visibility 0.3s ease-out, opacity 0.3s ease-out;
+}
+.show {
+    top: 50%;
+    visibility: visible;
+    opacity: 1;
+}
+.notice-wrapper .notice {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px lightblue;
+    background-color: #f9f9f9;
+    max-height: 100dvh;
+    overflow: auto;
+    padding: 25px;
+    position: relative;
+}
+.notice-wrapper .notice p{
+    text-align: justify;
+}
+.notice .close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 30px;
+    cursor: pointer;
+}
 @media (max-width: 1024px) {
     .checkout {
         width: 90%;

@@ -11,8 +11,7 @@ function About() {
                 <div> 
                     <h2>About the Founder</h2>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                        Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat beatae, magnam ullam facere, ipsum quidem in cumque dicta accusamus nobis voluptas maxime voluptates reiciendis iure consequatur voluptatem ut quos a illo. A porro nihil libero saepe assumenda repellendus dolorum aspernatur debitis maiores provident qui molestiae odit consequuntur, expedita sit deserunt.
                     </p>
                 </div>
             </div>
@@ -21,8 +20,7 @@ function About() {
             <div className='started'>
                 <h2>How We Started</h2>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                    Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat beatae, magnam ullam facere, ipsum quidem in cumque dicta accusamus nobis voluptas maxime voluptates reiciendis iure consequatur voluptatem ut quos a illo. A porro nihil libero saepe assumenda repellendus dolorum aspernatur debitis maiores provident qui molestiae odit consequuntur, expedita sit deserunt.
                 </p>
             </div>
         </div>
@@ -30,8 +28,7 @@ function About() {
             <div className='goal'>
                 <h2>Our Goal</h2>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                    Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat beatae, magnam ullam facere, ipsum quidem in cumque dicta accusamus nobis voluptas maxime voluptates reiciendis iure consequatur voluptatem ut quos a illo. A porro nihil libero saepe assumenda repellendus dolorum aspernatur debitis maiores provident qui molestiae odit consequuntur, expedita sit deserunt.
                 </p>
             </div>
         </div>
@@ -39,8 +36,7 @@ function About() {
             <div className='mission'>
                 <h2>Our Mission</h2>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                    Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat beatae, magnam ullam facere, ipsum quidem in cumque dicta accusamus nobis voluptas maxime voluptates reiciendis iure consequatur voluptatem ut quos a illo. A porro nihil libero saepe assumenda repellendus dolorum aspernatur debitis maiores provident qui molestiae odit consequuntur, expedita sit deserunt.
                 </p>
             </div>
         </div>
