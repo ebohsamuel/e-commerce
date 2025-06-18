@@ -101,7 +101,7 @@
     width: 100%;
     opacity: 0;
     visibility: hidden;
-    transition: top 0.3s ease-out, visibility 0.3s ease-out, opacity 0.3s ease-out;
+    transition: top 0.5s ease-out, visibility 0.5s ease-out, opacity 0.5s ease-out;
 }
 .show {
     top: 50%;
