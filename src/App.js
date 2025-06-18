@@ -21,16 +21,22 @@ function App() {
     setIsHome(true);
     setIsAbout(false);
     setIsContact(false)
+    setIsCancel(false);
+    setIsFilter(true);
   }
   const about = () => {
     setIsHome(false);
     setIsAbout(true);
     setIsContact(false)
+    setIsCancel(false);
+    setIsFilter(true);
   }
   const contact = () => {
     setIsHome(false);
     setIsAbout(false);
     setIsContact(true)
+    setIsCancel(false);
+    setIsFilter(true);
   }
   const filter = () => {
     setIsFilter(false);
@@ -45,7 +51,7 @@ function App() {
     setIsAbout(false);
     setIsContact(false)
   }
-  return (
+  return ( 
     <Router>
       <div className="App">
         <NavBar isFilter={isFilter} isCancel={isCancel} filter={filter} cancel={cancel} isAbout={isAbout} isContact={isContact} isHome={isHome} home={home} contact={contact} about={about} />
