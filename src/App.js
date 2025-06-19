@@ -77,7 +77,7 @@ function App() {
           <Route path={"/cart"} element={<CartContainer cart={cart} />} />
           <Route path={"/checkout"} element={<Checkout />} />
         </Routes>
-        <Footer contact={contact} home={home} about={about} />
+        <Footer contact={contact} home={home} about={about} isAbout={isAbout} isContact={isContact} isHome={isHome} />
       </div>
     </Router>
   );
