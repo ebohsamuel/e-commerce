@@ -1,6 +1,7 @@
 import '../customCSS/Footer.css'
+import { Link } from "react-router-dom";
 
-function Footer() {
+function Footer({ home, contact, about }) {
   return (
     <div className='footerWrapper'>
         <div className='col-12 footer'>
@@ -8,9 +9,9 @@ function Footer() {
                 <div>
                     <div className='directory'>
                         <h5>Directories</h5>
-                        <p>Home</p>
-                        <p>About</p>
-                        <p>Contact Us</p>
+                        <Link to={'/'} className='link' onClick={home}><p>Home</p></Link>
+                        <Link to={'/about'} className='link' onClick={about}><p>About</p></Link>
+                        <Link to={'/contact'} className='link' onClick={contact}><p>Contact Us</p></Link>
                     </div>
                 </div>
                 <div>
