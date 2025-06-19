@@ -8,7 +8,7 @@ function Footer({ home, contact, about }) {
             <div className='footer-top'>
                 <div>
                     <div className='directory'>
-                        <h5>Directories</h5>
+                        <h5>Quick Links</h5>
                         <Link to={'/'} className='link' onClick={home}><p>Home</p></Link>
                         <Link to={'/about'} className='link' onClick={about}><p>About</p></Link>
                         <Link to={'/contact'} className='link' onClick={contact}><p>Contact Us</p></Link>
