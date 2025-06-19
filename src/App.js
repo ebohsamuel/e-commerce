@@ -3,7 +3,7 @@ import VerticalNavigation from './components/VerticalNaviagtion';
 import './App.css'
 import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import About from "./components/About";
 import Contact from "./components/Contact";
@@ -14,9 +14,23 @@ import Checkout from "./components/Checkout";
 function App() {
   const [isFilter, setIsFilter] = useState(true);
   const [isCancel, setIsCancel] = useState(false);
-  const [isHome, setIsHome] = useState(true);
+  const [isHome, setIsHome] = useState(false);
   const [isAbout, setIsAbout] = useState(false);
   const [isContact, setIsContact] = useState(false);
+
+  useEffect(() => {
+    const url = window.location.href;
+    const path = url.split('/').pop();
+
+    if (path === '') {
+      home();
+    } else if (path === 'contact') {
+      contact();
+    } else if (path === 'about') {
+      about();
+    }
+  }, [])
+
   const home = () => {
     setIsHome(true);
     setIsAbout(false);
@@ -51,7 +65,7 @@ function App() {
     setIsAbout(false);
     setIsContact(false)
   }
-  return ( 
+  return (
     <Router>
       <div className="App">
         <NavBar isFilter={isFilter} isCancel={isCancel} filter={filter} cancel={cancel} isAbout={isAbout} isContact={isContact} isHome={isHome} home={home} contact={contact} about={about} />
